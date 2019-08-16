@@ -1,8 +1,19 @@
-.sourceResultsContainer {
+.tableContainer {
   height: 100%;
-  overflow: scroll;
+  overflow-x: scroll;
 }
 
-.sourceResultsContainer table {
-  width: 100%;
+.tableHeader {
+  height: auto;
+}
+
+.tableBody {
+  height: 50%;
+  overflow-y: scroll;
+}
+
+.tableHeader > table,
+.tableBody > table {
+  table-layout: fixed;
+  margin-bottom: 0;
 }
